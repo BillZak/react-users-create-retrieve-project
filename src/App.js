@@ -5,23 +5,7 @@ import React, { Component } from 'react';
 class App extends Component {
     constructor(props){
         super(props);
-        this.state = { users :[
-            {
-                name : "bill",
-                email : "bill@email.com",
-                gen : 12
-            },
-            {
-                name : "jude",
-                email : "jude@email.com",
-                gen : 11
-            },
-            {
-                name : "nate",
-                email : "nate@email.com",
-                gen : 15
-            }
-        ]}
+        this.state = { users :[]}
     }
 
     handleAddUser = (newUser) => {
@@ -41,7 +25,7 @@ class App extends Component {
         return (
             <> 
                 <UserForm addUser={this.handleAddUser}/>
-                <h2>Added Users</h2><hr/>
+                <h1 style={{textAlign:'center',marginTop:'50px'}}>Added Users</h1><hr/>
                 {users}
             </>
         );
