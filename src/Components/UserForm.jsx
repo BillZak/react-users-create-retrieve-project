@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../Form.css'
 
 class UserForm extends Component {
     constructor(props){
@@ -13,7 +14,7 @@ class UserForm extends Component {
 
     handleChange = (e)=>{
         this.setState({ [e.target.name] : e.target.value})
-    }
+    };
 
     handleSubmit = (e)=>{
         e.preventDefault()
@@ -33,7 +34,7 @@ class UserForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} className='form'>
                <div className="name">
                   <label htmlFor="name">Name</label><br/>
                   <input type="text" name="name" value={this.state.name} 
