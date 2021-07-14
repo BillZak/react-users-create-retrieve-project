@@ -1,0 +1,50 @@
+form{
+    background-color: rgb(248, 159, 248);
+    box-shadow: 2px 2px 1px  rgb(202, 199, 202);
+    border: 1px solid black;
+    border-radius: 40px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-right: 200px;
+    padding-left: 280px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+input{
+    width: 60%;
+    height: 2rem;
+    margin: 15px;
+    margin-left: 0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(206, 236, 250);
+}
+input:focus{
+    outline: none;
+    opacity: 0.6;
+}
+
+label{
+    font-size: 26px;
+    color: rgb(144, 22, 155);
+}
+
+button{
+    margin-left: 60px;
+    margin-top: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(144, 22, 155);
+    color: white;
+}
+button:active{
+    background-color: rgb(168, 157, 228);
+    transform: scale(1.1);
+}
