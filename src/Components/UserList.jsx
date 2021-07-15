@@ -1,11 +1,11 @@
 import React from 'react';
 import User from './User';
 
-const UserList = ({users}) => {
+const UserList = ({users,deleteUser,editUser}) => {
     
     const userList = users.map((item)=>{
         return(
-            <User  user={item}/>
+            <User  user={item} deleteUser = {deleteUser} editUser = {editUser}/>
         )
     })
     
