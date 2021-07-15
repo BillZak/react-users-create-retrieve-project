@@ -1,0 +1,40 @@
+.form{
+    background-color: rgb(161, 173, 241);
+    box-shadow: 2px 2px 6px  rgb(90, 88, 90);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-right: 30px;
+    padding-left: 380px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form label{
+    font-size: 26px;
+    color: rgb(20, 15, 20);
+}
+
+.form button{
+    margin-left: 110px;
+    margin-top: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(35, 18, 184);
+    color: white;
+}
+
+.close{
+    background-color: red;
+    margin-left: 1150px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding: 5px 20px;
+}
+
