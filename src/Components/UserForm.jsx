@@ -25,8 +25,7 @@ class UserForm extends Component {
             name : '',
             email : '',
             gen : ''
-        })
-
+        });
         
     }
 
@@ -34,7 +33,7 @@ class UserForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit} className='form'>
+            <form onSubmit={this.handleSubmit}>
                <div className="name">
                   <label htmlFor="name">Name</label><br/>
                   <input type="text" name="name" value={this.state.name} 
