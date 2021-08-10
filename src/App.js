@@ -6,7 +6,10 @@ import React, { Component } from 'react';
 class App extends Component {
     constructor(props){
         super(props);
-        this.state = { users :[]}
+        this.state = { users :[
+            {name: 'Bill', email: 'Bill@gmail.com', gen: '2'},
+        {name: 'Zack', email: 'zac@gmail.com', gen: '87'}
+        ]}
     }
 
     handleAddUser = (newUser) => {
@@ -17,7 +20,7 @@ class App extends Component {
     }
 
     handleDeleteUser =(userId)=> {
-        const savedusers = this.state.users.filter(
+        const savedusers = this.state.users.filter( 
               (user)=>{
                  return user.id !==userId;
               })
