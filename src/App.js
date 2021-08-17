@@ -4,13 +4,7 @@ import UserList from './Components/UserList'
 import React, { Component } from 'react';
 
 class App extends Component {
-    constructor(props){
-        super(props);
-        this.state = { users :[
-            {name: 'Bill', email: 'Bill@gmail.com', gen: '2'},
-        {name: 'Zack', email: 'zac@gmail.com', gen: '87'}
-        ]}
-    }
+    
 
     handleAddUser = (newUser) => {
         newUser.id = Math.random().toString();
@@ -41,9 +35,9 @@ class App extends Component {
 
         return (
             <> 
-                <UserForm addUser={this.handleAddUser}/>
+                <UserForm />
                 <h1 style={{fontSize:'40px',marginLeft:'500px',marginTop:'50px'}}>Added Users</h1>
-                <UserList  users= {this.state.users} deleteUser = {this.handleDeleteUser} editUser = {this.handleEditUser}/>
+                <UserList />
             </>
         );
     }
