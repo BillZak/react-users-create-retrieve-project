@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { editUser } from '../actions/userActions';
 import './EditForm.css'
 
-class UserForm extends Component {
+class EditForm extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -57,4 +59,8 @@ class UserForm extends Component {
     }
 }
 
-export default UserForm;
+const mapDispatchToProps = {
+     editUser:editUser
+}
+
+export default connect(null,mapDispatchToProps)(EditForm);
