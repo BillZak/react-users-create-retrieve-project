@@ -14,7 +14,10 @@ var usersReducer = ( state = initialState ,action) => {
         case "EDIT_USER":
         return{...state,users: state.users.map((user) =>
             user.id === action.payload.id ? action.payload : user )}
-        default: return state;
+        case "SET_ALL_USERS":
+        return {...state, users: action.payload}
+
+        default: return state; 
     }
 }
 
