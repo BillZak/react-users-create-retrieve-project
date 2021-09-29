@@ -20,7 +20,7 @@ class EditForm extends Component {
     };
 
     handleSubmit = (e)=>{
-        e.preventDefault()
+        e.preventDefault();
         this.props.editUser(this.state)
 
 
@@ -60,7 +60,7 @@ class EditForm extends Component {
 }
 
 const mapDispatchToProps = {
-     editUser:editUser
+     editUser:editUser,
 }
 
 export default connect(null,mapDispatchToProps)(EditForm);
