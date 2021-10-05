@@ -1,4 +1,3 @@
-import { getFirestore } from "redux-firestore"
 
 export const addUser =  ( newUser ) => {
    // newUser.id = Math.random().toString();
@@ -13,7 +12,8 @@ export const addUser =  ( newUser ) => {
 export const editUser = (updatedUser)=> {
     console.log(updatedUser.id)
     return(dispatch, state, {getFirestore})=>{
-      getFirestore().collection("users").doc(updatedUser.id).update(updatedUser)
+      getFirestore().collection("users")
+      .doc(updatedUser.id).update(updatedUser)
       .then(
           ()=> {
               console.log("Successfuly updated")
