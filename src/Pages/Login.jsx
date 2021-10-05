@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 import { loginWIthEmail } from '../actions/authActions';
 
 function Login(props) {
@@ -32,8 +33,9 @@ function Login(props) {
                </div>
                <button type="submit">Login Account</button>
             </form>
-
+            <Link to="/register">Don't have an account? Sign up</Link>
         </div>
+        
     );
 }
 
