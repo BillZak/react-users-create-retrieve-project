@@ -1,6 +1,5 @@
 
 export const addUser =  ( newUser ) => {
-   // newUser.id = Math.random().toString();
     return(dispatch, state, {getFirestore})=>{
       getFirestore()
       .collection("users")
